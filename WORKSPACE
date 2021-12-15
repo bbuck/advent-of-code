@@ -1,5 +1,7 @@
 # Sources from the Bazel Authors github.com/bazelbuild/rules_kotlin
 
+workspace(name = "advent_of_code")
+
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 rules_kotlin_version = "legacy-1.3.0"
