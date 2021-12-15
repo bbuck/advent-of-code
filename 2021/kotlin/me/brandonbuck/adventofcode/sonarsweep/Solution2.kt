@@ -1,5 +1,8 @@
 // Copyright 2021 Brandon Buck
 
+// Advent of Code 2021 "Sonar Sweep"
+// Day 1, Puzzle 2
+
 package me.brandonbuck.adventofcode.sonarsweep
 
 import me.brandonbuck.adventofcode.common.readAllFromStandardIn
