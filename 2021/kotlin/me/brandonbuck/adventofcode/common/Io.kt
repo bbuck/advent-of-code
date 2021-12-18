@@ -1,5 +1,3 @@
-// Copyright 2021 Brandon Buck
-
 package me.brandonbuck.adventofcode.common
 
 fun readAllFromStandardIn(): List<String> {

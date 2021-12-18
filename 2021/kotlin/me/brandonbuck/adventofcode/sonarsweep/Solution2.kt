@@ -1,5 +1,3 @@
-// Copyright 2021 Brandon Buck
-
 // Advent of Code 2021 "Sonar Sweep"
 // Day 1, Puzzle 2
 
