@@ -8,19 +8,23 @@ import me.brandonbuck.adventofcode.common.readAllFromStandardIn
 fun main() {
 	val inputs = readAllFromStandardIn()
 
-	println(solution1(inputs))
+	println(solution2(inputs))
 }
 
-fun solution1(inputs: List<String>): Int {
-	var location = Vector(0, 0)
+fun solution2(inputs: List<String>): Int {
+	var location = Vector3(0, 0, 0)
 
 	for (input in inputs) {
 		val parts = input.split(" ")
 
 		when (parts[0]) {
-			"forward" -> location = location.add(parts[1].toInt(), 0)
-			"down" -> location = location.add(0, parts[1].toInt())
-			"up" -> location = location.add(0, -parts[1].toInt())
+			"forward" -> {
+				val amount = parts[1].toInt()
+				val modify = Vector3(amount, amount * location.z, 0)
+				location = location.add(modify)
+			}
+			"down" -> location = location.add(0, 0, parts[1].toInt())
+			"up" -> location = location.add(0, 0, -parts[1].toInt())
 			else -> {
 				println("Not sure what to do with '${input}'")
 			}
