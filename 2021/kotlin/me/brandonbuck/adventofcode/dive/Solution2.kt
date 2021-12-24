@@ -3,7 +3,7 @@
 
 package me.brandonbuck.adventofcode.dive
 
-import me.brandonbuck.adventofcode.common.readAllFromStandardIn
+import me.brandonbuck.adventofcode.common.io.readAllFromStandardIn
 
 fun main() {
 	val inputs = readAllFromStandardIn()

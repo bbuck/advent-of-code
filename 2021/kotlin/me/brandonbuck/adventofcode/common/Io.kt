@@ -1,15 +1,15 @@
-package me.brandonbuck.adventofcode.common
+package me.brandonbuck.adventofcode.common.io
 
 fun readAllFromStandardIn(): List<String> {
 	val inputs = mutableListOf<String>()
 
 	do {
-		var input = readLine()?.trim()
+		val input = readLine()?.trim()
 
 		if (input != null) {
 			inputs.add(input)
 		}
-	} while (input != null && input.length > 0)
+	} while (input != null && input.isNotEmpty())
 
 	return inputs
 }
